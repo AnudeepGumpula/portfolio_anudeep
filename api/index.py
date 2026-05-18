@@ -184,5 +184,3 @@ async def send_message(msg: ContactMessage):
 @app.get("/api/health")
 async def health():
     return {"status": "online", "timestamp": datetime.now().isoformat()}
-
-app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")
