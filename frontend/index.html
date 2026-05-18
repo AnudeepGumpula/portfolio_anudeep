@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Anudeep Gumpula — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- Scanline overlay -->
+<div class="scanlines"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">AG<span class="blink">_</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <div class="nav-status"><span class="dot"></span>available</div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag" id="heroTag">// software_engineer.init()</div>
+    <h1 class="hero-name" id="heroName"></h1>
+    <div class="hero-title" id="heroTitle">Full Stack · AI Systems · Distributed Backend</div>
+    <p class="hero-tagline" id="heroTagline">Building scalable AI-driven systems at the intersection of product, data, and engineering.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">view_projects()</a>
+      <a href="#contact" class="btn-secondary">get_in_touch()</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric"><span class="metric-val">4+</span><span class="metric-label">years exp.</span></div>
+      <div class="metric-sep">//</div>
+      <div class="metric"><span class="metric-val">3.8</span><span class="metric-label">GPA, MS CS</span></div>
+      <div class="metric-sep">//</div>
+      <div class="metric"><span class="metric-val">5</span><span class="metric-label">certifications</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <canvas id="matrixCanvas"></canvas>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-num">01.</span>
+    <h2>about_me</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p id="aboutBio">Loading...</p>
+      <div class="about-highlights" id="aboutHighlights"></div>
+    </div>
+    <div class="about-card">
+      <div class="about-card-header">// profile.json</div>
+      <div class="about-card-body" id="profileJson"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header">
+    <span class="section-num">02.</span>
+    <h2>tech_stack</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid" id="skillsGrid"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header">
+    <span class="section-num">03.</span>
+    <h2>projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid" id="projectsGrid"></div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header">
+    <span class="section-num">04.</span>
+    <h2>experience</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <span class="section-num">05.</span>
+    <h2>contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="contact-intro">Have a project in mind or want to collaborate? Let's build something remarkable.</p>
+      <div class="contact-links">
+        <a href="mailto:anudeepgumpula@gmail.com" class="contact-link">
+          <span class="contact-icon">✉</span>
+          <span>anudeepgumpula@gmail.com</span>
+        </a>
+        <a href="https://github.com/AnudeepGumpula" target="_blank" class="contact-link">
+          <span class="contact-icon">⌥</span>
+          <span>github.com/AnudeepGumpula</span>
+        </a>
+        <a href="https://linkedin.com/in/Anudeep-Gumpula" target="_blank" class="contact-link">
+          <span class="contact-icon">◈</span>
+          <span>linkedin.com/in/Anudeep-Gumpula</span>
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label>name_</label>
+        <input type="text" id="cName" placeholder="your name" required/>
+      </div>
+      <div class="form-group">
+        <label>email_</label>
+        <input type="email" id="cEmail" placeholder="your@email.com" required/>
+      </div>
+      <div class="form-group">
+        <label>message_</label>
+        <textarea id="cMessage" rows="5" placeholder="tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary btn-full" id="submitBtn">send_message()</button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">AG_</span>
+    <span class="footer-text">designed & built by Anudeep Gumpula · <span id="year"></span></span>
+    <span class="footer-api">powered by FastAPI</span>
+  </div>
+</footer>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
