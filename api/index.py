@@ -1,13 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from datetime import datetime
-from pathlib import Path
+
 
 # Resolve frontend directory relative to this file's location
-FRONTEND_DIR = Path(__file__).parent.parent / "frontend"
+
 
 app = FastAPI(title="Anudeep Gumpula Portfolio API", version="1.0.0")
 
